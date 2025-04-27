@@ -1,1 +1,115 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* ボディのスタイル */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf6fc; /* 淡い水色 */
+    color: #333;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #a0d7f4; /* 淡い水色 */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 3px solid #ff9f9f; /* 淡いピンク色のアクセント */
+}
+
+    header h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+/* メインコンテンツのスタイル */
+main {
+    padding: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* 上下の余白 */
+}
+
+.vrchat-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vrchat-link-card {
+    width: 250px; /* VRChatリンクの幅を広げる */
+    padding: 2rem; /* 上下の余白を追加 */
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.link-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .link-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+.link-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .link-item:hover {
+        background-color: #f0f9fc; /* 淡い水色のホバー効果 */
+        color: #ff6f6f; /* 淡いピンク色 */
+    }
+
+.cute-icon {
+    font-size: 2.5rem; /* アイコンを少し大きくする */
+    margin-right: 1rem;
+    color: #4a90e2; /* 明るい水色 */
+    transition: color 0.3s;
+}
+
+.link-item:hover .cute-icon {
+    color: #ff6f6f; /* 淡いピンク色 */
+}
+
+.link-text {
+    font-size: 1.2rem;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #a0d7f4; /* 淡い水色 */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid #ff9f9f; /* 淡いピンク色のアクセント */
+}
