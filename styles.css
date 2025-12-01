@@ -49,7 +49,7 @@ main {
 }
 
 .vrchat-link-card {
-    width: 250px; /* VRChatリンクの幅を広げる */
+    width: 320px; /* VRChatリンクの幅を広げる */
     padding: 2rem; /* 上下の余白を追加 */
 }
 
