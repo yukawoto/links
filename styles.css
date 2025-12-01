@@ -126,11 +126,11 @@ header {
     border-bottom: 5px solid #ff69b4; 
 }
 
-header h1 {
+/*header h1 {
     /* タイトルの色をホットピンクに変更して目立たせる */
-    color: #ff69b4 !important; 
+    /*color: #ff69b4 !important; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 /* リンクカード全体のホバー効果をお祝いムードに */
 .link-card:hover {
