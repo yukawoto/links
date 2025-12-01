@@ -1,24 +1,24 @@
-/* ���Z�b�gCSS */
+/* リセットCSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* �{�f�B�̃X�^�C�� */
+/* ボディのスタイル */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #eaf6fc; /* �W�����F */
+    background-color: #eaf6fc; /* 淡い水色 */
     color: #333;
 }
 
-/* �w�b�_�[�̃X�^�C�� */
+/* ヘッダーのスタイル */
 header {
-    background-color: #a0d7f4; /* �W�����F */
+    background-color: #a0d7f4; /* 淡い水色 */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
-    border-bottom: 3px solid #ff9f9f; /* �W���s���N�F�̃A�N�Z���g */
+    border-bottom: 3px solid #ff9f9f; /* 淡いピンク色のアクセント */
 }
 
     header h1 {
@@ -30,7 +30,7 @@ header {
         font-size: 1.2rem;
     }
 
-/* ���C���R���e���c�̃X�^�C�� */
+/* メインコンテンツのスタイル */
 main {
     padding: 2rem;
 }
@@ -39,7 +39,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem; /* �㉺�̗]�� */
+    gap: 2rem; /* 上下の余白 */
 }
 
 .vrchat-link {
@@ -49,8 +49,8 @@ main {
 }
 
 .vrchat-link-card {
-    width: 250px; /* VRChat�����N�̕����L���� */
-    padding: 2rem; /* �㉺�̗]����ǉ� */
+    width: 250px; /* VRChatリンクの幅を広げる */
+    padding: 2rem; /* 上下の余白を追加 */
 }
 
 .social-links {
@@ -83,33 +83,87 @@ main {
 }
 
     .link-item:hover {
-        background-color: #f0f9fc; /* �W�����F�̃z�o�[���� */
-        color: #ff6f6f; /* �W���s���N�F */
+        background-color: #f0f9fc; /* 淡い水色のホバー効果 */
+        color: #ff6f6f; /* 淡いピンク色 */
     }
 
 .cute-icon {
-    font-size: 2.5rem; /* �A�C�R���������傫������ */
+    font-size: 2.5rem; /* アイコンを少し大きくする */
     margin-right: 1rem;
-    color: #4a90e2; /* ���邢���F */
+    color: #4a90e2; /* 明るい水色 */
     transition: color 0.3s;
 }
 
 .link-item:hover .cute-icon {
-    color: #ff6f6f; /* �W���s���N�F */
+    color: #ff6f6f; /* 淡いピンク色 */
 }
 
 .link-text {
     font-size: 1.2rem;
 }
 
-/* �t�b�^�[�̃X�^�C�� */
+/* フッターのスタイル */
 footer {
-    background-color: #a0d7f4; /* �W�����F */
+    background-color: #a0d7f4; /* 淡い水色 */
     color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
-    border-top: 3px solid #ff9f9f; /* �W���s���N�F�̃A�N�Z���g */
+    border-top: 3px solid #ff9f9f; /* 淡いピンク色のアクセント */
+}
+
+
+
+/* -------------------------------------- */
+/* お誕生日・Amazonリンク用の追加スタイル */
+/* -------------------------------------- */
+
+/* 1. お誕生日装飾の調整（強調） */
+header {
+    /* 既存のボーダー色をホットピンクで強調 */
+    border-bottom: 5px solid #ff69b4; 
+}
+
+header h1 {
+    /* タイトルの色をホットピンクに変更して目立たせる */
+    color: #ff69b4 !important; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* リンクカード全体のホバー効果をお祝いムードに */
+.link-card:hover {
+    /* 既存のホバー効果を豪華に */
+    transform: translateY(-8px) scale(1.02); /* 少し大きく浮き上がらせる */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 0 10px #ff69b4; /* ピンクの光を加え、お祝い感を出す */
+}
+
+
+/* 2. Amazonほしい物リストの特別なスタイル */
+.amazon-link-card {
+    /* VRChatカードと同じ幅に設定して目立たせる */
+    width: 250px; 
+    padding: 0; 
+    /* 背景をピンクとAmazonオレンジのグラデーションにして、お祝いムードを強調 */
+    background: linear-gradient(135deg, #ffc0cb 0%, #ff9900 100%); 
+}
+
+.amazon-link-card .link-item {
+    /* ボタン全体の色をグラデーションの上に重ねるため透明に */
+    background-color: transparent; 
+    color: white; /* 文字を白にして目立たせる */
+    font-size: 1.3rem;
+    padding: 2rem 1rem; /* 大きく、押しやすいボタンにする */
+}
+
+.amazon-link-card .link-item:hover {
+    /* ホバー時、グラデーションの上にやや透明な白を重ねる */
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: white; 
+}
+
+.amazon-link-card .cute-icon {
+    /* アイコンの色を白にして、ギフトマークを強調 */
+    color: white; 
 }
