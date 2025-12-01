@@ -155,6 +155,10 @@ header h1 {
     color: white; /* 文字を白にして目立たせる */
     font-size: 1.3rem;
     padding: 2rem 1rem; /* 大きく、押しやすいボタンにする */
+    
+    /* ⭐ここを追加・修正します⭐ */
+    white-space: nowrap; /* テキストを強制的に一行に保ち、改行させない */
+    justify-content: center; /* アイコンとテキスト全体を中央に配置 */
 }
 
 .amazon-link-card .link-item:hover {
