@@ -7,7 +7,7 @@
 body {
     font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #a8c8f8 0%, #c4a8f8 40%, #f8a8c8 80%, #a8f0f8 100%);
+    background: #e6f4fb;
     background-attachment: fixed;
     color: #1c1c1e;
     padding-bottom: 4rem;
@@ -25,7 +25,7 @@ header {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px) saturate(200%);
     -webkit-backdrop-filter: blur(30px) saturate(200%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    border-bottom: 2px solid rgba(255, 110, 160, 0.35);
     color: #1c1c1e;
     text-align: center;
     padding: 2.5rem 1rem 2rem;
@@ -88,8 +88,9 @@ main {
 .link-card:hover {
     transform: translateY(-3px) scale(1.01);
     background: rgba(255, 255, 255, 0.38);
+    border-color: rgba(255, 110, 160, 0.5);
     box-shadow:
-        0 8px 28px rgba(0, 0, 0, 0.12),
+        0 8px 28px rgba(255, 110, 160, 0.18),
         inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
@@ -109,14 +110,14 @@ main {
 .cute-icon {
     font-size: 1.6rem;
     margin-right: 1rem;
-    color: rgba(80, 80, 120, 0.85);
+    color: rgba(255, 110, 160, 0.85);
     transition: color 0.2s ease, transform 0.2s ease;
     width: 2rem;
     text-align: center;
 }
 
 .link-card:hover .cute-icon {
-    color: rgba(100, 80, 180, 0.9);
+    color: rgba(255, 70, 130, 0.95);
     transform: scale(1.1);
 }
 
