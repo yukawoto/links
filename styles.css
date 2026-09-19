@@ -1,10 +1,8 @@
 :root {
-    --blue-100: #a3eeff;
-    --blue-200: #afdce6;
-    --blue-300: #72a7b3;
-    --blue-400: #58818a;
-    --blue-500: #3e5b61;
-    --pink-accent: #ffa8d9;
+    --pastel-blue: #c9f0f8;
+    --pink-accent: #f7a8c4;
+    --text-dark: #5a5560;
+    --text-muted: #8a8590;
 }
 
 * {
@@ -16,9 +14,9 @@
 body {
     font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(180deg, var(--blue-100) 0%, var(--blue-200) 100%);
+    background: var(--pastel-blue);
     background-attachment: fixed;
-    color: var(--blue-500);
+    color: var(--text-dark);
     padding-bottom: 4rem;
 }
 
@@ -34,8 +32,8 @@ header {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px) saturate(200%);
     -webkit-backdrop-filter: blur(30px) saturate(200%);
-    border-bottom: 2px solid rgba(255, 168, 217, 0.5);
-    color: var(--blue-500);
+    border-bottom: 2px solid rgba(247, 168, 196, 0.55);
+    color: var(--text-dark);
     text-align: center;
     padding: 2.5rem 1rem 2rem;
 }
@@ -45,14 +43,14 @@ header h1 {
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: -0.5px;
-    color: var(--blue-500);
+    color: var(--text-dark);
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
 }
 
 header p {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--blue-400);
+    color: var(--text-muted);
 }
 
 main {
@@ -82,13 +80,13 @@ main {
 }
 
 .link-card {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 18px;
     box-shadow:
-        0 4px 16px rgba(62, 91, 97, 0.1),
+        0 4px 16px rgba(90, 85, 96, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
@@ -96,30 +94,30 @@ main {
 
 .link-card:hover {
     transform: translateY(-3px) scale(1.01);
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.72);
     border-color: var(--pink-accent);
     box-shadow:
-        0 8px 28px rgba(255, 168, 217, 0.35),
-        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        0 8px 28px rgba(247, 168, 196, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .link-item {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--blue-500);
+    color: var(--text-dark);
     padding: 1.1rem 1.4rem;
     transition: background-color 0.2s ease;
 }
 
 .link-item:hover {
-    background-color: rgba(255, 168, 217, 0.12);
+    background-color: rgba(247, 168, 196, 0.15);
 }
 
 .cute-icon {
     font-size: 1.6rem;
     margin-right: 1rem;
-    color: var(--blue-300);
+    color: #8fc9d6;
     transition: color 0.2s ease, transform 0.2s ease;
     width: 2rem;
     text-align: center;
